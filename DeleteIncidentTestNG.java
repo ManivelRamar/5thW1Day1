@@ -43,7 +43,7 @@ public class DeleteIncidentTestNG
 		WebElement result = driver.findElement(By.xpath("//tbody[@class='list2_body']//td"));
 		String resultText = result.getText();
 		
-		if (resultText.equals("No records to display")) 
+		if (resultText.contains("No records to display")) 
 		{	
 			System.out.println("Incident has been deleted");
 		} 
